@@ -1,0 +1,9 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua54
+Description: Lua 5.4 library
+Version: 5.4.6
+Libs: -L${libdir} -llua54 -lm -ldl -lreadline
+Cflags: -I${includedir}/lua54

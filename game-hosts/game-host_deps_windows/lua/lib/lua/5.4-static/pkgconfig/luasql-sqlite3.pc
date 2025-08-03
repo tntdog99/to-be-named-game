@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luasql-sqlite3
+Description: Database connectivity for Lua (SQLite3 driver)
+URL: https://github.com/lunarmodules/luasql
+Version: 2.6.0
+Requires: lua54, sqlite3
+Libs: -L${prefix}/lib/lua/5.4-static -llua.luasql.sqlite3
+Cflags: -I${includedir} -D_GNU_SOURCE

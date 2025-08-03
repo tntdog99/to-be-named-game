@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: cffi-lua
+Description: A portable C FFI for Lua 5.1+
+URL: https://github.com/q66/cffi-lua
+Version: 0.2.3
+Requires: luajit, libffi
+Libs: -L${prefix}/lib/lua/5.1-static -llua.cffi -lm -ldl
+Cflags: -I${includedir} -DFFI_STATIC_BUILD

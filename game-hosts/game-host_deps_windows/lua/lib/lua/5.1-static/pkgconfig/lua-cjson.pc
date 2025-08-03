@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-cjson
+Description: A fast JSON encoding/parsing module
+URL: https://github.com/openresty/lua-cjson
+Version: 2.1.0.12
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.cjson
+Cflags: -I${includedir}

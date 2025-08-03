@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-sdl2
+Description: Lua-SDL2 is a pure C binding of SDL 2.0 for Lua 5.1, JIT, 5.2, and 5.3
+URL: https://github.com/Tangent128/luasdl2
+Version: 2.0.5
+Requires: lua54, libtiff-4, vorbisfile, vorbis, ogg, freetype2
+Libs: -L${prefix}/lib/lua/5.4-static -llua.SDL -llua.SDL.image -llua.SDL.mixer -llua.SDL.net -llua.SDL.ttf -luser32 -lgdi32 -lwinmm -limm32 -lole32 -loleaut32 -lversion -luuid -ladvapi32 -lsetupapi -lshell32 -ldinput8 -lws2_32 -liphlpapi
+Cflags: -I${includedir}

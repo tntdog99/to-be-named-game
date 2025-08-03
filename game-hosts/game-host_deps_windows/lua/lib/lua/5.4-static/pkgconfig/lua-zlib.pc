@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-zlib
+Description: Simple streaming interface to zlib for Lua
+URL: https://github.com/brimworks/lua-zlib
+Version: 1.2
+Requires: lua54, zlib
+Libs: -L${prefix}/lib/lua/5.4-static -llua.zlib
+Cflags: -I${includedir}

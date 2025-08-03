@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luaposix
+Description: Lua bindings for POSIX
+URL: https://github.com/luaposix/luaposix
+Version: 36.1
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.posix.ctype -llua.posix.dirent -llua.posix.errno -llua.posix.fcntl -llua.posix.fnmatch -llua.posix.glob -llua.posix.grp -llua.posix.libgen -llua.posix.poll -llua.posix.pwd -llua.posix.sched -llua.posix.signal -llua.posix.stdio -llua.posix.stdlib -llua.posix.sys.msg -llua.posix.sys.resource -llua.posix.sys.socket -llua.posix.sys.stat -llua.posix.sys.statvfs -llua.posix.sys.time -llua.posix.sys.times -llua.posix.sys.utsname -llua.posix.sys.wait -llua.posix.syslog -llua.posix.termio -llua.posix.time -llua.posix.unistd -llua.posix.utime -lm -ldl -lcrypt -lrt
+Cflags: -I${includedir}

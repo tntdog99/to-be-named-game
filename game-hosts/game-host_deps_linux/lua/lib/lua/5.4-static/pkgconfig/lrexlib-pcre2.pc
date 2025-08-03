@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lrexlib-pcre2
+Description: Regular expression library binding (PCRE2 flavour)
+URL: https://github.com/rrthomas/lrexlib
+Version: 2.9.1
+Requires: lua54, libpcre2-8
+Libs: -L${prefix}/lib/lua/5.4-static -llua.rex_pcre2 -lm -ldl -lreadline
+Cflags: -I${includedir} -DPCRE2_STATIC

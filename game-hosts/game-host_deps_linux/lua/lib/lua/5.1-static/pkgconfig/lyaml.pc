@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lyaml
+Description: libYAML binding for Lua
+URL: https://github.com/gvvaughan/lyaml
+Version: 6.2.8
+Requires: luajit, yaml-0.1
+Libs: -L${prefix}/lib/lua/5.1-static -llua.yaml -lm -ldl
+Cflags: -I${includedir}

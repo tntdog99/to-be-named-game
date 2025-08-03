@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lui
+Description: Lua binding for libui
+URL: https://github.com/zhaozg/lui
+Version: undefined
+Requires: luajit, libui
+Libs: -L${prefix}/lib/lua/5.1-static -llua.lui
+Cflags: -I${includedir}

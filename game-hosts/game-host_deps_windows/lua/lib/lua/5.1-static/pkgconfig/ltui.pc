@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: ltui
+Description: A cross-platform terminal ui library based on Lua
+URL: https://github.com/tboox/ltui
+Version: 2.7
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.ltui -lkernel32 -luser32 -lgdi32 -ladvapi32
+Cflags: -I${includedir}

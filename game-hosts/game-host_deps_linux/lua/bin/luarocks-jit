@@ -1,0 +1,6 @@
+BASEDIR=$(dirname $0)
+export LUA_PATH="$BASEDIR/../share/lua/5.1/?.lua;$BASEDIR/../share/lua/5.1/?/init.lua;$LUA_PATH"
+export LUA_CPATH="$BASEDIR/../lib/lua/5.1/?.so;$BASEDIR/../lib/lua/5.1/loadall.so;$LUA_CPATH"
+export LUAROCKS_SYSCONFDIR="$BASEDIR/../lib/luarocks/rocks-5.1"
+"$BASEDIR/luajit" "$BASEDIR/../lib/luarocks/rocks-5.1/luarocks/3.9.2-1/bin/luarocks.lua" config --scope system home_tree "$BASEDIR/.." > /dev/null
+exec "$BASEDIR/luajit" "$BASEDIR/../lib/luarocks/rocks-5.1/luarocks/3.9.2-1/bin/luarocks.lua" "$@"

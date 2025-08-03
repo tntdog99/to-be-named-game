@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lui
+Description: Lua binding for libui
+URL: https://github.com/zhaozg/lui
+Version: undefined
+Requires: lua54, libui
+Libs: -L${prefix}/lib/lua/5.4-static -llua.lui -lm -ldl -lreadline -pthread
+Cflags: -I${includedir} -pthread

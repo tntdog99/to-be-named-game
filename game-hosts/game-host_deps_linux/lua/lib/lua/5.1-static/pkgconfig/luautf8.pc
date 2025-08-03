@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luautf8
+Description: A UTF-8 support module for Lua
+URL: https://github.com/starwing/luautf8
+Version: 0.1.5
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.lua-utf8 -lm -ldl
+Cflags: -I${includedir}

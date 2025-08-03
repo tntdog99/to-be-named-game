@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-openssl
+Description: Openssl binding for Lua
+URL: https://github.com/zhaozg/lua-openssl
+Version: 0.8.3
+Requires: lua54, openssl
+Libs: -L${prefix}/lib/lua/5.4-static -llua.openssl -lm -ldl -lreadline
+Cflags: -I${includedir}

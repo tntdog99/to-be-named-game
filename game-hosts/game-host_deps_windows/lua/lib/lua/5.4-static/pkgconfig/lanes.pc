@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lanes
+Description: Multithreading support for Lua
+URL: https://github.com/LuaLanes/lanes
+Version: 3.16.0
+Requires: lua54
+Libs: -L${prefix}/lib/lua/5.4-static -llua.lanes.core
+Cflags: -I${includedir}

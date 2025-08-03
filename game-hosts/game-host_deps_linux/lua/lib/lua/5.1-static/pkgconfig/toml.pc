@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: toml
+Description: TOML v1.0.0 parser and serializer for Lua. Powered by toml++.
+URL: https://github.com/LebJe/toml.lua
+Version: 0.3.0
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.toml -lm -ldl
+Cflags: -I${includedir}

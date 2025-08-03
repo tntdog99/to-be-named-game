@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luafilesystem
+Description: File System Library for the Lua Programming Language
+URL: https://github.com/lunarmodules/luafilesystem
+Version: 1.8.0
+Requires: lua54
+Libs: -L${prefix}/lib/lua/5.4-static -llua.lfs
+Cflags: -I${includedir}

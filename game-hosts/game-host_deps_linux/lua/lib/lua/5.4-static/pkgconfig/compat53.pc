@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: compat53
+Description: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
+URL: https://github.com/lunarmodules/lua-compat-5.3
+Version: 0.8+5.3.5
+Requires: lua54
+Libs: -L${prefix}/lib/lua/5.4-static -llua.compat53.utf8 -llua.compat53.table -llua.compat53.string -lm -ldl -lreadline
+Cflags: -I${includedir}

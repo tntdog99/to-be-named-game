@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luasec
+Description: A binding for OpenSSL library to provide TLS/SSL communication over LuaSocket
+URL: https://github.com/brunoos/luasec
+Version: 1.3.1
+Requires: lua54, openssl
+Libs: -L${prefix}/lib/lua/5.4-static -llua.ssl -lws2_32
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: winapi
+Description: Minimal but useful bindings to Windows API
+URL: https://github.com/stevedonovan/winapi
+Version: 1.4.2
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.winapi -lkernel32 -luser32 -lpsapi -ladvapi32 -lshell32 -lMpr
+Cflags: -I${includedir}

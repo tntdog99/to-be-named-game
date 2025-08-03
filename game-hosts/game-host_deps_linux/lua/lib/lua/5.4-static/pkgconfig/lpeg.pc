@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lpeg
+Description: Parsing Expression Grammars For Lua
+URL: http://www.inf.puc-rio.br/~roberto/lpeg.html
+Version: 1.0.2
+Requires: lua54
+Libs: -L${prefix}/lib/lua/5.4-static -llua.lpeg -lm -ldl -lreadline
+Cflags: -I${includedir}

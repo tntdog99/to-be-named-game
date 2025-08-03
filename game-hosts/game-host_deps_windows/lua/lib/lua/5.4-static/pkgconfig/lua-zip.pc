@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-zip
+Description: Lua binding to libzip
+URL: https://github.com/brimworks/lua-zip
+Version: 0.2
+Requires: lua54, libzip
+Libs: -L${prefix}/lib/lua/5.4-static -llua.brimworks.zip
+Cflags: -I${includedir}

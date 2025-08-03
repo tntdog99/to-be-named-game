@@ -1,0 +1,2 @@
+BASEDIR=$(dirname $0)
+exec "$BASEDIR/lua" "$BASEDIR/../lib/luarocks/rocks-5.4/luastatic/scm-0/bin/luastatic.lua" "$@"

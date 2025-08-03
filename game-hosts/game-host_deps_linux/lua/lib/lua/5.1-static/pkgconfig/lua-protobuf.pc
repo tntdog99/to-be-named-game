@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lua-protobuf
+Description: protobuf data support for Lua
+URL: https://github.com/starwing/lua-protobuf
+Version: 0.5.0
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.pb -lm -ldl
+Cflags: -I${includedir}

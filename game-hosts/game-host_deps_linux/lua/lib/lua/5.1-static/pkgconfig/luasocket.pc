@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luasocket
+Description: Network support for the Lua language
+URL: https://github.com/lunarmodules/luasocket
+Version: 3.1.0
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.socket.unix -llua.socket.serial -llua.mime.core -llua.socket.core -lm -ldl
+Cflags: -I${includedir}

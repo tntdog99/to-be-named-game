@@ -1,0 +1,11 @@
+prefix=c:/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: luv
+Description: Bare libuv bindings for lua
+URL: https://github.com/luvit/luv
+Version: 1.44.2
+Requires: lua54, libuv
+Libs: -L${prefix}/lib/lua/5.4-static -llua.luv -lpsapi -luser32 -ladvapi32 -liphlpapi -luserenv -lws2_32
+Cflags: -I${includedir}

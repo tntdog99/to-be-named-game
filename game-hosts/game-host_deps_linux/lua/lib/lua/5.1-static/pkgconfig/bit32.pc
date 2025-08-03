@@ -1,0 +1,11 @@
+prefix=/usr/local/lua-batteries
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: bit32
+Description: Lua 5.2 bit manipulation library
+URL: https://github.com/lunarmodules/lua-compat-5.3
+Version: 0.8+5.3.5
+Requires: luajit
+Libs: -L${prefix}/lib/lua/5.1-static -llua.bit32 -lm -ldl
+Cflags: -I${includedir}
